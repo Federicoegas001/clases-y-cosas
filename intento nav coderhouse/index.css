@@ -1,0 +1,47 @@
+/* normalize */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.titulo1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EA90FF;
+    height: 6vh;
+}
+
+nav{
+    background-color: #1F2023;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8rem;
+}
+
+nav .menu {
+    color: white;
+    display: flex;
+    gap: 5rem;
+}
+
+nav .menu2{
+    background-color: #EA90FF;
+    position: relative;
+    width: 10rem;
+}
+
+.menu2 .fa-bars{
+    color: white;
+    position: absolute;
+    right: 2px;
+}

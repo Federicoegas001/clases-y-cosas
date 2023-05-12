@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <h2>Soy el Header de la Página</h2>
+    </header>
+
+    <nav>
+        <h2>Soy la Navegación</h2>
+        <!-- Listas desordenadas -->
+        <ul>
+            <!-- items list -->
+            <li>
+                <!-- anclas: permiten la navegación -->
+                <a href="../index.html">HOME</a>
+            </li>
+            <li>
+                <a href="./sucursales.html">SUCURSALES</a>
+            </li>
+            <li>
+                <a href="./productos.html">PRODUCTOS</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <main>
+        
+        <h1>
+            Soy la Página de Productos - Formulario
+        </h1>
+
+        <!-- formulario -->
+        <!-- <form action="/guardardatos.js" method="post"> -->
+
+        <form id="miFormulario">
+
+            <label for="nombre">Nombre: </label>
+            <input type="text" id="nombre" name="nombre" minlength="3" maxlength="10" required>
+
+            <br>
+
+            <label for="edad">Edad: </label>
+            <input type="number" id="edad" name="edad">
+
+            <br>
+
+            <label for="nacimiento">Fecha de Nacimieto: </label>
+            <input type="date" id="nacimiento" name="nacimiento">
+
+            <br>
+
+            <label for="password">Password: </label>
+            <input type="password" minlength="8" maxlength="12" id="password" name="password" required>
+
+
+            <br>
+
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" placeholder="miemail@gmail.com" required>
+
+            <br>
+            
+            <label for="genero">Género: </label>
+            <br>
+            <label for="masculino">Masculino: </label>
+            <input type="radio" value="Masculino">
+            <br>
+
+            <input type="radio" value="Femenino">
+
+            <br>
+
+            <input type="checkbox">
+
+            <br>
+
+            <textarea name="" id="" cols="50" rows="10"></textarea>
+
+            <input type="button" id="ejemplo" value="Enviar Datos"> 
+
+            <br>
+
+            <button type="submit" >Soy un Botón y Envío Datos</button>
+
+            <br>
+        </form>
+        
+    </main>
+
+    <hr>
+    <hr>
+
+
+    <footer>
+        <address>
+            San Martin 200
+        </address>
+
+        <p>
+            <a href="mailto:ventas@gmail.com">ventas@gmail.com</a>
+        </p>
+
+        <p>
+            <a href="tel:3212313153513">14332135145343532</a>
+        </p>
+    </footer>
+    
+
+</body>
+</html>

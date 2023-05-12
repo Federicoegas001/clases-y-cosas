@@ -1,0 +1,16 @@
+.ejemplo{
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr ;
+    grid-template-rows: 600px 250px 360px;
+    grid-column-gap: 20px;
+    grid-row-gap: 35px;
+}
+
+
+.caja{
+    background: grey;
+    width: 300px;
+    color: white;
+    border-radius: 8px;
+    font-size: 120px;
+}   
