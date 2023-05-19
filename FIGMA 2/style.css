@@ -1,0 +1,96 @@
+/* normalize */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-principal:#0872BF;
+}
+
+body{
+     background-color: #141A1A;
+     ;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+header nav{
+    display: flex;
+    gap: 40px;
+}
+
+header h2{
+    color: white;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+.Hero{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+}
+
+.Hero-text {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.Hero-text span{
+    color: var(--color-principal);
+}
+
+.Hero-text_1 p{
+    width: 50%;
+}
+
+.Hero-text_1{
+    display: flex;
+    flex-direction: column;
+}
+
+.redes{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.iconos{
+    display: flex;
+    gap: 0.7rem;
+}
+
+.seccion_2{
+    display: flex;
+    flex-direction: column;
+}
+
+.service-cards{
+    display: flex;
+    justify-content: center;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+
+}
