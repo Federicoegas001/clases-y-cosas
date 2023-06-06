@@ -3,94 +3,102 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    ;
 }
 
-:root{
-    --color-principal:#0872BF;
+h3{
+    font-size: 24px;
+}
+h2{
+    font-size: 30px;
 }
 
-body{
-     background-color: #141A1A;
-     ;
+h1{
+    font-size: 38px;
 }
 
 a{
     text-decoration: none;
-    color: white;
+}
+body{
+    background: #141A1A;
+
 }
 
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
-}
-
-header nav{
-    display: flex;
-    gap: 40px;
+    padding: 1.6rem 4rem;
+    position: relative;
 }
 
 header h2{
     color: white;
 }
 
-main{
+.logo{
     display: flex;
-    justify-content: center;
+    position: absolute;
+    left:20px;
 }
 
-.Hero{
-    width: 90%;
+header img{
+    width: 40px;
+    height: 40px;
+}
+
+.header-img{
+    position: relative;
+}
+
+#imagen1{
+    position: absolute;
+}
+
+nav{
     display: flex;
-    justify-content: center;
-    padding-top: 4rem;
-}
-
-.Hero-text {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 4rem;
-}
-
-.Hero-text span{
-    color: var(--color-principal);
-}
-
-.Hero-text_1 p{
-    width: 50%;
-}
-
-.Hero-text_1{
-    display: flex;
-    flex-direction: column;
-}
-
-.redes{
-    display: flex;
-    align-items: center;
     gap: 2rem;
 }
 
-.iconos{
-    display: flex;
-    gap: 0.7rem;
+nav a{
+    color: white;
 }
 
-.seccion_2{
-    display: flex;
-    flex-direction: column;
+nav a:hover{
+    color: blue;
 }
 
-.service-cards{
+
+main{
     display: flex;
     justify-content: center;
+    padding: 8rem 0 0 0;
 }
 
-.cards{
+.imagenes{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+}
 
+.imagen-1{
+    position: relative;
+}
+
+#Imagen2{
+    position: absolute;
+    right: 27.3rem;
+    bottom: 18rem;
+}
+
+.texto{
+    color: white;
+}
+
+.texto span{
+    color: blue;
 }

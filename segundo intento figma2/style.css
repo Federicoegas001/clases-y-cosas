@@ -1,0 +1,135 @@
+/* normalize */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h3{
+    font-size:24px ;
+}
+
+h2{
+    font-size: 30px;
+}
+
+h1{
+    font-size: 38px;
+}
+
+p{
+    font-size: 23px;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: #141414;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 4rem;
+    color: white;
+}
+
+.header-img{
+    display: flex;
+    gap: 1rem;
+}
+
+header img{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.img{
+    position: relative;
+}
+
+#vector{
+    position: absolute;
+}
+
+.header-img{
+    display: flex;
+}
+
+header nav{
+    display: flex;
+    gap: 2rem;
+}
+
+header nav a{
+    color: white;
+}
+
+header nav a:hover{
+    color: blue;
+}
+
+
+main{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 6rem;
+}
+
+main section{
+    background-color: yellow;
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+main section .texto{
+    background-color: red;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+main section .texto p{
+    width: 80%;
+}
+
+main section .texto span{
+    color: blue;
+}
+
+main section .texto button{
+    background-color: blue;
+    width: 175px;
+    border-radius: 5px;
+}
+
+.text-iconos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: violet;
+}
+
+.iconos{
+    background-color: chartreuse;
+    position: relative;
+}
+
+.redes{
+    color: black;
+    display: flex;
+    justify-content: c
+}
+
+.bi-hexagon-fill{
+    font-size: 30px;
+}
