@@ -5,16 +5,344 @@
     box-sizing: border-box;
 }
 
-header{
-    background-color: yellow;
+/* .recomendedPeopleList{
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    gap: 4rem;
+}
+
+.recomendedPeople{
+    display: flex;
+    justify-content: space-around;
+    gap: 10rem;
+}
+
+.peopleimg{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
-header div{
-    background-color: red;
-    width: 80%;
+.peopleimg img{
+    width: 100px;
+}
+
+.nombres{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.boton{
+    display: flex;
+    align-items: center;
+}
+
+.btn-follow{
+    width: 6vw;
+    height: 6vh;
+    border-radius: 21px;
+} */
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: #080e24;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 2rem;
+    color: white;
+}
+
+.buscador{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+header input{
+    width: 314px;
+    height: 55px;
+    border-radius: 21px;
+    font-size: 23px;
+    padding-left: 1vw;
+    background: #7FCAFF14;
+    border: none;
+}
+
+.navegador{
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 3.5rem;
+}
+
+.navegador-boton{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.navegador-boton img{
+    position: absolute;
+    left: 1.2rem;
+}
+
+.btn-home{
+    width: 165px;
+    height: 57px;
+    border-radius: 22px;
+    font-size: 25px;
+    padding-left: 25px;
+}
+
+
+
+.iconos-nav{
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+}
+
+.usuario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.5rem;
+
+}
+
+.usuario-name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #121D36;
+    width: 250px;
+    height: 57px;
+    border-radius: 72px;
+    gap: 1rem;
+}
+
+.usuario-name img{
+    width: 40px;
+} 
+
+main{
+    padding: 2rem 2rem;
+    display: flex;
+    gap: 3rem;
+}
+
+.parte-izquierda{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.userinfo{
+    width: 430px;
+    height: 455px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #7FCAFF14;
+    background-image: url(./img/Rectangle\ 8.png);
+    background-repeat: no-repeat;
+    gap: 1.7rem;
+    border-radius: 21px;
+}
+
+.userinfo h3{
+    background-color: none;
+    border: none;
+    color: blue;
+    font-weight: 100;
+}
+
+.userinfo img{
+    width: 80px;
+}
+
+.userinfo h3{
+    color:#1090F2;
+}
+
+.userintroduccion{
+    font-size: 18px;
+    width: 312px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.7rem;
+}
+
+.userintroduccion span{
+    color: #888888;
+}
+
+.userfollowers{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.userFollowingNum,.userFollowersNum{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-container{
+    padding: 2rem 2rem;
+    width: 900px;
+    height: 191px;
+    background-color: #121D36;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-radius: 21px;
+}
+
+.userOpinion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.userOpinion img{
+    width: 60px;
+}
+
+.userOpinion input{
+    width: 735px;
+    height: 61px;
+    background: #7FCAFF14;
+    border: none;
+    border-radius: 21px;
+    font-size: 19px;
+    padding-left: 1vw;
+    position: relative;
+}
+
+.cara-position{
+    position: relative;
+}
+
+.caras{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+#cara-1{
+    width: 30px;
+}
+
+#cara-2{
+    position: absolute;
+    width: 15px;
+}
+
+.section-iconos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5.5rem;
+}
+
+.Photo,.Video,.Schedule,.Thread{
+    color: white;
+    border: 1.11px solid #FFFFFF40;
+    width: 96px;
+    height: 42px;
+    border-radius: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14.5px;
+}
+
+.recomendedPeople{
+    background-color: #121D36;
+    width: 430px;
+    height: 380px;
+    border-radius: 21px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem 2rem;
+    gap: 1rem;
+    color: white;
+}
+
+
+.recomendedPeopleList{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+}
+
+.usercardcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.recomendedUserCard{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.7rem;
+}
+
+.recomendedUserCard img{
+    width: 62px;
+    height: 62px;
+}
+
+.userRecomendedInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.userRecomendedInfo span{
+    color: #888888;
+}
+
+.btn-follow{
+    width: 102px;
+    height: 42px;
+    border-radius: 51px;
+    border: none;
+}
+
+.enlace a{
+    color:#1090F2;
+}
+
+.user-comentarios{
+    width: 900px;
+    height: 277px;
+    background: #7FCAFF14;
+    border-radius: 21px;
 }
