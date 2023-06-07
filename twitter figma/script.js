@@ -2,14 +2,14 @@ const recomendedUsers = [
     {
         nombre: 'Lucas',
         username: '@LucasOk',
-        image: 'https://lh3.googleusercontent.com/ONpvLgqVCiILt1f5_bAl_FJn8Y2ZTWd1iABITTUce-UmHV3dkXHy-x7YNK668HnjDa0hoL5t7x0hCy91zdjyvOtdohOcoJ_w5Wuf2Cu5Uz3TmSI76GQ=sw500-rp-e30',
-        id:1
+        image: 'https://lh3.googleusercontent.com/ONpvLgqVCiILt1f5_bAl_FJn8Y2ZTWd1iABITTUce-UmHV3dkXHy-x7YNK668HnjDa0hoL5t7x0hCy91zdjyvOtdohOcoJ_w5Wuf2Cu5Uz3TmSI76GQ=w500-rp-e30',
+        id: 1
     },
     {
         nombre: 'Maria',
         username: '@MariaOk',
         image: 'https://lh3.googleusercontent.com/oUNz--fmfv96BCRoVs09WWkQtcuwV7y4JEeudixrRX_h2hWItOq9Zlepp3K4wvItzmS5SLRqkn9I6NO7U3i0-EJ4wVjx6gT1CCXXyJUTWQw0Ok12rio=w500-rp-e30',
-        id:2
+        id: 2
     },
     {
         nombre: 'Pepe',
@@ -29,7 +29,6 @@ recomendedUsers.forEach((user) =>{
                 <img src=${user.image} alt="user image">
             </div>
             <div class="userRecomendedInfo">
-                <h3>${user.id === 1}</h3>
                 <span>${user.username}</span>
             </div>
         </div>
@@ -46,7 +45,7 @@ const usercomnentsHTML = document.querySelector(".user-comentarios")
 recomendedUsers.forEach((user) =>{
     usercomnentsHTML.innerHTML += `
         <div class="user-name_username">
-            <img src="${user.image }" alt="">
+            <img src="${user.image.id}" alt="">
             <div>
                 <h2>Federico</h2>
                 <span>10 minutes ago</span>
@@ -57,3 +56,5 @@ recomendedUsers.forEach((user) =>{
         </div>
         `
 })
+
+

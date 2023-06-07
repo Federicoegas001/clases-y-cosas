@@ -346,3 +346,51 @@ main{
     background: #7FCAFF14;
     border-radius: 21px;
 }
+
+.twittscontainers{
+    width: 430px;
+    height: 864px;
+    border-radius: 21px;
+    background: #7FCAFF14;
+    color: white;
+    padding: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.twittscontainers a{
+    color: #1090F2;
+}
+
+.twittscontainers img{
+    width: 26px;
+    height: 26px;
+}
+
+.twittscontainers span{
+    color: #888888;
+
+}
+
+.twittscontainerstittle{
+    display: flex;
+    justify-content: space-between;
+}
+
+.usertwitts{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.usertwitts img{
+    color: ;
+}
+
+.usertwittsnumber{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
