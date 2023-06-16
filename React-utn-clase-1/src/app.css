@@ -1,0 +1,13 @@
+*{
+    font-family: sans-serif;
+}
+
+h1{
+    color: red;
+}
+
+.Titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

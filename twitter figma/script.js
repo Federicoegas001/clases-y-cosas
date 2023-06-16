@@ -19,6 +19,32 @@ const recomendedUsers = [
     },
 ]
 
+const twitts = [
+    {
+        twittsuser1: "ElonMusk",
+        twittslike1:"83.6 k Tweets",
+        twittsuser2: "Startups",
+        twittslikes2:"12 k Tweets",
+        twittsuser3: "dogecoin",
+        twittslikes3:"45.1 k Tweets",
+        twittsuser4: "MUFC",
+        twittslikes4:"35.9 k Tweets",
+        twittsuser5: "Rangnick",
+        twittslikes5:"27.7 k Tweets",
+    }
+]
+
+const user = [{
+    nombre: "Dardo",
+    username:"DardoOK",
+    timestamp:"20 minutes ago",
+    ReTweets: "10",
+    likes: 59,
+    comments:20,
+    userimgage:"https://lh3.googleusercontent.com/LxD7qhuSHIr45NYir7jj_68wEkkrCtaYzCrSHGgPT9mm0pWmXHoB0iLq42CsV4U9jPT7FdwSPPTPOvs1W8yV0Jzp0HccqF6gegtAvX2U-3iA_krgtPfB=w500-rp-e30",
+    content: "no creo que la scaloneta se frene ahora",
+}]
+
 const recomendedListHTML = document.querySelector('.recomendedPeopleList')
 
 recomendedUsers.forEach((user) =>{
@@ -40,21 +66,89 @@ recomendedUsers.forEach((user) =>{
 })
 
 
-const usercomnentsHTML = document.querySelector(".user-comentarios")
+const tweetsHTML = document.querySelector(".Tweets")
 
-recomendedUsers.forEach((user) =>{
-    usercomnentsHTML.innerHTML += `
-        <div class="user-name_username">
-            <img src="${user.image.id}" alt="">
-            <div>
-                <h2>Federico</h2>
-                <span>10 minutes ago</span>
-            </div>
-            <div>
-                 <h3>@laksho</h3>
-            </div>
-        </div>
-        `
+twitts.forEach((nose) =>{
+    tweetsHTML.innerHTML += `
+    <div class="twittscontainers">
+                    <div class="twittscontainerstittle">
+                        <h2>${nose.titulo}</h2>
+                        <img src="./img/config.png" alt="...">
+                    </div>
+                    <h4>TRENDING IN UNITED STATES</h4>
+                    <div class="usertwitts">
+                        <div class="usertwittsnumber">
+                            <h2>#${nose.twittsuser1}</h2>
+                            <span>${nose.twittslike1}</span>
+                        </div>
+                        <img src="./img/3puntitos.png" alt="...">
+                    </div>
+                    <div class="usertwitts">
+                        <div class="usertwittsnumber">
+                            <h2>#${nose.twittsuser2}</h2>
+                            <span>${nose.twittslikes2}</span>
+                        </div>
+                        <img src="./img/3puntitos.png" alt="...">
+                    </div>
+                        <h4>NFT. TRENDINGS</h4>
+                    <div class="usertwitts">
+                        <div class="usertwittsnumber">
+                            <h2>#${nose.twittsuser3}</h2>
+                            <span>${nose.twittslikes3}</span>
+                        </div>
+                        <img src="./img/3puntitos.png" alt="...">
+                    </div>
+                    <h4>FOOTBALL.TRENDING</h4>
+                    <div class="usertwitts">
+                        <div class="usertwittsnumber">
+                            <h2>#${nose.twittsuser4}</h2>
+                            <span>${nose.twittslikes4}</span>
+                        </div>
+                        <img src="./img/3puntitos.png" alt="...">
+                    </div>
+                    <div class="usertwitts">
+                        <div class="usertwittsnumber">
+                            <h2>#${nose.twittsuser5}</h2>
+                            <span>${nose.twittslikes5}</span>
+                        </div>
+                        <img src="./img/3puntitos.png" alt="...">
+                    </div>
+                    <a href="#"><h3>Show Profile</h3></a>
+                </div>`
 })
 
+
+
+
+const usercomnentsHTML = document.querySelector(".user-comentarios")
+
+user.forEach((algo) =>{
+    usercomnentsHTML.innerHTML += `
+    <div class = "CONTAINER">
+        <div class="user-name_username">
+            <div class = "nombre_username">
+                <img src="${algo.userimgage}" alt="">
+                <h2>${algo.nombre}</h2>
+                <span>${algo.timestamp}</span>
+            </div>
+            <div>
+                 <h3>@${algo.username}</h3>
+            </div>
+        </div>
+        <div>
+            <p>${algo.content}</p>
+        </div>
+        <div>
+            <div>
+                <div><img src="./img/corazon.png" alt=""></div>
+                <div><img src="./img/bucle.png" alt=""></div>
+                <div><img src="./img/pensamiento.png" alt=""></div>
+            </div>
+            <div>
+                 <h4>${algo.likes} Likes| ${algo.ReTweets} Retweets | ${algo.comments} Comments</h4>
+             </div>
+        </div>
+    </div>
+        `
+})
 
